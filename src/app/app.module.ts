@@ -8,6 +8,13 @@ import { LeftSidebarComponent } from './Layout/left-sidebar.component';
 import { BreadcrumbComponent } from './Layout/breadcrumb.component';
 import { DashboardComponent } from './Layout/dashboard.component';
 import { FooterComponent } from './Layout/footer.component';
+import { TablesComponent } from './Layout/tables.component';
+import { ChartsComponent } from './Layout/charts.component';
+import { WidgetsComponent } from './Layout/widgets.component';
+import { GridComponent } from './Layout/grid.component';
+import { FormBasicComponent } from './Layout/form-basic.component';
+import { FormWizardComponent } from './Layout/form-wizard.component';
+import { PagesButtonsComponent } from './Layout/pages-buttons.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +23,14 @@ import { FooterComponent } from './Layout/footer.component';
     LeftSidebarComponent,
     BreadcrumbComponent,
     DashboardComponent,
-    FooterComponent
+    FooterComponent,
+    TablesComponent,
+    ChartsComponent,
+    WidgetsComponent,
+    GridComponent,
+    FormBasicComponent,
+    FormWizardComponent,
+    PagesButtonsComponent
   ],
   imports: [
     BrowserModule,
