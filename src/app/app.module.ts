@@ -15,6 +15,20 @@ import { GridComponent } from './Layout/grid.component';
 import { FormBasicComponent } from './Layout/form-basic.component';
 import { FormWizardComponent } from './Layout/form-wizard.component';
 import { PagesButtonsComponent } from './Layout/pages-buttons.component';
+import { IconMaterialComponent } from './Layout/icon-material.component';
+import { IconFontawesomComponent } from './Layout/icon-fontawesom.component';
+import { PagesElementsComponent } from './Layout/pages-elements.component';
+import { PagesGalleryComponent } from './Layout/pages-gallery.component';
+import { Index2Component } from './Layout/index2.component';
+import { PagesCalendarComponent } from './Layout/pages-calendar.component';
+import { PagesInvoiceComponent } from './Layout/pages-invoice.component';
+import { PagesChatComponent } from './Layout/pages-chat.component';
+import { AuthenticationLoginComponent } from './Layout/authentication-login.component';
+import { AuthenticationRegisterComponent } from './Layout/authentication-register.component';
+import { Error403Component } from './Layout/error403.component';
+import { Error404Component } from './Layout/error404.component';
+import { Error405Component } from './Layout/error405.component';
+import { Error500Component } from './Layout/error500.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +44,21 @@ import { PagesButtonsComponent } from './Layout/pages-buttons.component';
     GridComponent,
     FormBasicComponent,
     FormWizardComponent,
-    PagesButtonsComponent
+    PagesButtonsComponent,
+    IconMaterialComponent,
+    IconFontawesomComponent,
+    PagesElementsComponent,
+    PagesGalleryComponent,
+    Index2Component,
+    PagesCalendarComponent,
+    PagesInvoiceComponent,
+    PagesChatComponent,
+    AuthenticationLoginComponent,
+    AuthenticationRegisterComponent,
+    Error403Component,
+    Error404Component,
+    Error405Component,
+    Error500Component
   ],
   imports: [
     BrowserModule,
