@@ -22,8 +22,10 @@ import { Error403Component } from './Layout/error403.component';
 import { Error405Component } from './Layout/error405.component';
 import { Error404Component } from './Layout/error404.component';
 import { Error500Component } from './Layout/error500.component';
+import { SiteLayoutComponent } from './Layout/site-layout.component';
 
-const routes: Routes = [
+/*
+const appRoutes: Routes = [
   { path: '', pathMatch: 'full', redirectTo: 'dashboard' },
   { path: 'dashboard', component: DashboardComponent },
   { path: 'tables', component: TablesComponent },
@@ -49,9 +51,47 @@ const routes: Routes = [
   { path: 'error500', component: Error500Component },
   { path: '**', component: DashboardComponent }
 ];
+*/
+
+const appRoutes: Routes = [
+
+  // Site routes goes here
+  {
+      path: '',
+      component: SiteLayoutComponent,
+      children: [
+        { path: '', component: DashboardComponent, pathMatch: 'full'},
+        { path: 'tables', component: TablesComponent },
+        { path: 'charts', component: ChartsComponent },
+        { path: 'widgets', component: WidgetsComponent },
+        { path: 'grid', component: GridComponent },
+      { path: 'form-basic', component: FormBasicComponent },
+      { path: 'form-wizard', component: FormWizardComponent },
+      { path: 'pages-buttons', component: PagesButtonsComponent },
+      { path: 'icon-material', component: IconMaterialComponent },
+      { path: 'icon-fontawesom', component: IconFontawesomComponent },
+      { path: 'pages-elements', component: PagesElementsComponent },
+      { path: 'pages-gallery', component: PagesGalleryComponent },
+      { path: 'index2', component: Index2Component },
+      { path: 'pages-calendar', component: PagesCalendarComponent },
+      { path: 'pages-invoice', component: PagesInvoiceComponent },
+      { path: 'pages-chat', component: PagesChatComponent },
+      { path: 'error403', component: Error403Component },
+      { path: 'error404', component: Error404Component },
+      { path: 'error405', component: Error405Component },
+      { path: 'error500', component: Error500Component }
+      ]
+  },
+
+  { path: 'login', component: AuthenticationLoginComponent},
+  { path: 'register', component: AuthenticationRegisterComponent },
+  // otherwise redirect to home
+  { path: '**', redirectTo: '' }
+];
+
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(appRoutes)],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

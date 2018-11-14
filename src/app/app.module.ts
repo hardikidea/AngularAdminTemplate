@@ -29,6 +29,7 @@ import { Error403Component } from './Layout/error403.component';
 import { Error404Component } from './Layout/error404.component';
 import { Error405Component } from './Layout/error405.component';
 import { Error500Component } from './Layout/error500.component';
+import { SiteLayoutComponent } from './Layout/site-layout.component';
 
 @NgModule({
   declarations: [
@@ -58,7 +59,8 @@ import { Error500Component } from './Layout/error500.component';
     Error403Component,
     Error404Component,
     Error405Component,
-    Error500Component
+    Error500Component,
+    SiteLayoutComponent
   ],
   imports: [
     BrowserModule,
